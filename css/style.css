@@ -1,0 +1,227 @@
+/* #region global */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Light.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+
+/* rem */
+html {
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+/* em */
+body {
+    font-size: 16px;
+}
+
+.container {
+    margin: 0 auto;
+    height: auto;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* #endregion */
+
+/* #region top */
+#top {
+    background-image: url('../img/superHero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+.topContainer {
+    height: 80vh;
+    width: 100;
+    background-color: rgba(0, 0, 0, 0.281);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topContainer a {
+    cursor: default;
+    margin-top: 1em;
+}
+
+.topContainer button {
+    background-color: rgba(73, 73, 73, 0.281);
+    color: white;
+    padding: 1em 2em;
+    border: .2em solid white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.topContainer button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* #endregion */
+
+/* #region content */
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 95vh;
+    width: 100%;
+}
+
+/* #region WAD */
+
+.textos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    height: 30vh;
+}
+
+#content h2 {
+    margin: .7em 0;
+}
+
+.textoEsquerda,
+.textoDireita {
+    text-align: center;
+    width: 30%;
+}
+
+/* #endregion */
+
+/* #region cards */
+
+.cardContainer {
+    height: 65vh;
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.cards{
+    width: 15%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 1em 0; /* Adicione preenchimento dentro do bloco de cartão */
+}
+
+.cards img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid black;
+}
+
+.cardContent h3{
+    padding-top: 1em;
+}
+
+.cardContent p{
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding: 1em 0;
+}
+
+.cardContent a{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+    cursor: default;
+    text-decoration: none;
+}
+
+.cardContent button{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    border: none;
+    padding: .3em 1em;
+    border-radius: .2em;
+    cursor: pointer;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+footer h2 {
+    margin: .7em 0;
+}
+
+footer p{
+    width: 50%;
+}
+
+.blueGreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding-top: 3em;
+}
+
+.blueContainer,
+.greenContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 30vh;
+    color: white;
+}
+
+.blueContainer{
+    background-color: rgba(115,114,252,255);
+}
+
+.greenContainer{
+    background-color: rgb(144, 197, 123);
+}
+
+.copyRight{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    margin-top: 3em;
+}
+
+/* #endregion */
